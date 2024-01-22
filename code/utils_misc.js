@@ -215,7 +215,7 @@ window.showPortalPosLinks = function(lat, lng, name) {
     var osm = '<a href="http://www.openstreetmap.org/?mlat='+lat+'&mlon='+lng+'&zoom=16">OpenStreetMap</a>';
     var latLng = '<span>&lt;' + lat + ',' + lng +'&gt;</span>';
     dialog({
-      html: '<div style="text-align: center;">' + qrcode + script + gmaps + '; ' + bingmaps + '; ' + osm + '<br />' + latLng + '</div>',
+      html: '<div style="text-align: center;">' + qrcode + script + gmaps + '; ' + bingmaps + '; ' + osm + '; ' + applemaps + '<br />' + latLng + '</div>',
       title: name,
       id: 'poslinks'
     });
