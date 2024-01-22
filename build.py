@@ -138,7 +138,7 @@ def loaderMD(var):
 
 def loaderImage(var):
     fn = var.group(1)
-    return 'data:image/png;base64,{0}'.format(base64.encodestring(open(fn, 'rb').read()).decode('utf8').replace('\n', ''))
+    return 'data:image/png;base64,{0}'.format(base64.encodebytes(open(fn, 'rb').read()).decode('utf8').replace('\n', ''))
 
 def loadCode(ignore):
     return '\n\n;\n\n'.join(map(readfile, sorted(glob.glob('code/*.js'))))
