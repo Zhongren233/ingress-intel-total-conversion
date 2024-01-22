@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Pyhon Build Shell
-      run: build.py local
+      run: ./build.py local
